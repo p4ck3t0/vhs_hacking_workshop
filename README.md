@@ -98,3 +98,10 @@ Jetzt muss der Exploit auf dem System des Opfer gestartet werden.
 * wireshark - wireshark starten
 * arpspoof -t Client-IP Gateway-IP
 * arpspoof -t Gateway-IP Client-IP
+
+## Häufige Fehler
+* no file or Directory - Die Datei oder der Ordner existiert nicht, liegt die Datei im aktuellen Ordner? Ist der Name Richtig geschieben? Das können wir mit
+```
+ls
+```
+üerprüfen. Am besten auch immer mit *TAB* arbeiten.

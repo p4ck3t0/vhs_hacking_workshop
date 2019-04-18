@@ -16,7 +16,7 @@ cd vhs_hacking_workshop
 ```
 wechselt man in diesen Ordner. Hier liegen nun alle Dateien, die wir im Lehrgang benutzt haben.
 
-## Der TCP-Ordner
+## Der TCP Ordner
 Im Ordner TCP befinden sich die beiden C Programme TCP_client.c und TCP_listener.c welche wir mit dem Kommando
 ```
 ls
@@ -35,7 +35,32 @@ Jetzt sollte mit ls eine Datei mit dem Namen Server in dem Ordner vorhanden sein
 ```
 starten. Anschließend müssen wir den Client noch konfigurieren. Hierzu müssen wir die obigen Schritte wiederholen, und den listener in client ändern.
 
-# keep on hacking
+## Der Exploit_tool Ordner
+Im Ordner Exploit_tool befindet sich die Instalationsdatei install_fatrat.sh. Diese Datei dient dazu das Exploit Tool zu Instalieren. Zuerst mussen wir die Datei install_fatrat.sh ausführbar machen. Das Kommando lautet
+```
+chmod +x install_fatrat.sh
+```
+Hiernach sollte mit
+```
+ls
+```
+eine grüne Datei install_fatrat.sh zu sehen sein. Diese können wir mit dem Befehl
+```
+./install_fatrat.sh
+```
+starten. Nun läuft die Instalation. Während der instalation kann es sein, dass noch ein paar Tasten gedrückt werden müssen. Dazu
+lesen wir das, was das Terminal uns ausgibt.Hier müssen Sie leider selber entscheiden. Sollten Fehler auftreten, dann ist Google der beste Freund oder die Whatsapp Gruppe oder Die Issues Section von diesem Github Projekt. Nach erfolreicher instalation müssen wir in den neuen Ordner wechslen
+```
+cd TheFatRat
+```
+Anschließend können wir mit
+```
+./fatrat
+```
+Unser Exploit-Tool starten. Das weitere Vorgehen steht in der Facharbeit. Die von uns genutzte Zahlenkombination lautete:
+* 6
+* 2
+* Dann nur noch die IP, Port Name und die Payload (windows/meterpreter/reverse_tcp)
 
 ## Wichtige Kommandos
 * cd - in ein Verzeichnis wechslen
